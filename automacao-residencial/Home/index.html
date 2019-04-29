@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smart Home</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen,projection">
+	<link href="css/icones.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/materialize.css" media="screen,projection">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/funcoes.js"></script>
+</head>
+<body>
+	<nav class="light-blue darken-2" role="navigation">
+	    <div class="nav-wrapper"><a id="logo-container" href="index.html" class="brand-logo center">Smart Home</a>
+			 <ul id="slide-out" class="side-nav">
+			    <li>
+			    	<a href="index.html" class="light-blue darken-3 white-text">Home<i class="material-icons right">home</i></a>
+			    </li>
+			    <div class="divider"></div>
+			    <li>
+			    	<a href="cozinha.html" class="waves-effect waves-light btn light-blue darken-2">
+			    		Cozinha<i class="material-icons right">arrow_forward_ios</i>
+			    	</a>
+			    </li>
+
+			    <li>
+			    	<a href="sala.html" class="waves-effect waves-light btn light-blue darken-2">
+			    		Sala<i class="material-icons right">arrow_forward_ios</i>
+			    	</a>
+			    </li>
+			    
+			    <li>
+			    	<a href="quarto1.html" class="waves-effect waves-light btn light-blue darken-2">
+			    		Quarto 1<i class="material-icons right">arrow_forward_ios</i>
+			    	</a>
+			    </li>
+			    
+			    <li>
+			    	<a href="quarto2.html" class="waves-effect waves-light btn light-blue darken-2">
+			    		Quarto 2<i class="material-icons right">arrow_forward_ios</i>
+			    	</a>
+			    </li>
+
+			    <li>
+			    	<a href="piscina.html" class="waves-effect waves-light btn light-blue darken-2">
+			    		Piscina<i class="material-icons right">arrow_forward_ios</i>
+			    	</a>
+			    </li>
+
+			    <li>
+			    	<a href="sobre.html" class="waves-effect waves-light btn light-blue darken-2">
+			    		Sobre<i class="material-icons right">arrow_forward_ios</i>
+			    	</a>
+			    </li>
+			  </ul>
+		      
+		      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+	    </div>
+  	</nav>
+  	<div class="col s10 offset-s1 z-depth-1 lighten-2 center div-sub-titulo row">
+		<div class="grey-text text-darken-1">
+			<h4 class="sub-titulo">Principal</h4>
+		</div>
+	</div>
+	<input type="hidden" id="paginaAtual" value="principal">
+	<div class="row center">
+		<div class="col s10 offset-s1 row centro">
+			<div class="row grey-text text-darken-1">
+				<h6>Temperatura Ambiente °C</h6>
+			</div>
+			<div class="row">
+				<div class="offset-s4 col s2">
+					<img src="img/temperatura.png" width="25x">
+				</div>
+				<div class="light-blue-text text-darken-1 col s2">
+					<h6 id="temperatura"></h6>
+				</div>
+			</div>						
+		</div>	
+		<a href="quarto1.html">
+			<div class="col s5 offset-s1 row centro grey-text text-darken-1">
+				<h6>Quarto 1&nbsp&nbsp</h6>
+				<img id="quarto1" src="img/lampada_desligada.png" width="90">
+				<br>		
+			</div>
+		</a>
+		<a href="quarto2.html">
+			<div class="col s5 row centro grey-text text-darken-1">
+				<h6>Quarto 2&nbsp&nbsp</h6>
+				<img id="quarto2" src="img/lampada_desligada.png" width="90">
+				<br>	
+			</div>
+		</a>
+		<a href="sala.html">
+			<div class="col s5 offset-s1 row centro grey-text text-darken-1">
+				<h6>Sala&nbsp&nbsp</h6>
+				<img id="sala" src="img/lampada_desligada.png" width="90">
+				<br>	
+			</div>
+		</a>
+		<a href="cozinha.html">
+	  		<div class="col s5 row centro grey-text text-darken-1">
+				<h6>Cozinha&nbsp&nbsp</h6>
+				<img id="cozinha" src="img/lampada_desligada.png" width="90">
+				<br>		
+			</div>
+		</a>
+		<a href="piscina.html">
+			<div class="col s10 offset-s1 row centro grey-text text-darken-1">
+				<h6>Piscina&nbsp&nbsp</h6>
+				<img id="piscina" src="img/piscina_desligada.png" width="90">
+				<br>	
+			</div>
+		</a>
+	</div>
+	<script src="js/init.js"></script>
+    <script src="js/materialize.js"></script>
+</body>
+</html>
